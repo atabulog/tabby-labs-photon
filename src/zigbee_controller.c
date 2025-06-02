@@ -1,16 +1,17 @@
 #include "zigbee_controller.h"
 
-ZigbeeController *zigbee_controller_init(void) 
+void zigbee_controller_init(ZigbeeController* controller)
 {
   // Initialization logic
 }
 
-void zigbee_controller_destroy(ZigbeeController *controller) 
+void zigbee_controller_destroy(ZigbeeController* controller) 
 {
   // Deinitialization logic
 }
 
-bool zigbee_controller_initialize(ZigbeeController *controller) {
+bool zigbee_controller_initialize(ZigbeeController* controller)
+{
   // Initialization logic
   return true;
 }
@@ -27,7 +28,9 @@ void zigbee_controller_stop(ZigbeeController* controller)
 }
 
 bool zigbee_controller_send_data(ZigbeeController* controller, const uint8_t* data, uint16_t length)
-{}
+{
+  return true; // Return true if data sent successfully, false otherwise
+}
 
 int zigbee_controller_receive_data(ZigbeeController* controller, uint8_t* buffer, uint16_t buffer_size)
 {

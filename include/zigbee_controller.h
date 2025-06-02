@@ -14,7 +14,7 @@ typedef struct {
  * 
  * @return ZigbeeController* 
  */
-ZigbeeController* zigbee_controller_init(void);
+void zigbee_controller_init(ZigbeeController* controller);
 
 /**
  * @brief 
